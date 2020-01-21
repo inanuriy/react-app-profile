@@ -1,40 +1,38 @@
 .title {
     text-align: center;
-    padding: 2vw;
+    padding: 30px;
 }
 
 .profilePicture {
     background: rgb(226, 226, 226);
     display: flex;
     justify-content: center;
-    height: 300px;    
-    width: 300px;
+
 }
 
 .profileImage {
-    height: 35vw;
+    height: 300px;
 }
 
 .aboutMe {
     text-align: center;
-    padding: 3vw;
+    padding: 40px 20px 20px 20px;
 }
 
 .aboutMeP {
     text-align: center;
-    padding-left: 12vw;
-    padding-right: 12vw;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .footerBg {
-    margin-top: 9vw;
+    margin-top: 15px;
     background: rgb(226, 226, 226);
-    height: 15vw;
-    padding-top: 2vw;
 }
 
 .pFooter {
     text-align: center;
+    padding: 20px;
 }
 
 .imgIcon {

@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactMe() {
     return (
         <div>
-            <footer className="footerBg fixed-bottom">
+            <footer className="footerBg">
             <p className="pFooter">
                 Please contact me for more information.<br></br><br></br>
             <a href="https://www.instagram.com/innanuriy">
@@ -13,7 +13,6 @@ export default function ContactMe() {
             <img className="imgIcon" src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"></img>
             </a>
             </p>
-            
             </footer>
         </div>
     )
