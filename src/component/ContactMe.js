@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactMe() {
     return (
         <div>
-            <footer className="footerBg">
+            <footer className="footerBg fixed-bottom">
             <p className="pFooter">
                 Please contact me for more information.<br></br><br></br>
             <a href="https://www.instagram.com/innanuriy">
