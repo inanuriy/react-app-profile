@@ -1,5 +1,6 @@
 .title {
     text-align: center;
+    padding: 2vw;
 }
 
 .profilePicture {
@@ -10,4 +11,31 @@
 
 .profileImage {
     height: 35vw;
+}
+
+.aboutMe {
+    text-align: center;
+    padding: 3vw;
+}
+
+.aboutMeP {
+    text-align: center;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+.footerBg {
+    margin-top: 9vw;
+    background: rgb(226, 226, 226);
+    height: 15vw;
+    padding-top: 2vw;
+}
+
+.pFooter {
+    text-align: center;
+}
+
+.imgIcon {
+    width: 50px;
+    height: 50px;
 }
