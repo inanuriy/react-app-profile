@@ -6,7 +6,9 @@
 .profilePicture {
     background: rgb(226, 226, 226);
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    height: 300px;    
+    width: 300px;
 }
 
 .profileImage {
