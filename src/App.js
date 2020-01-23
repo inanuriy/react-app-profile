@@ -6,6 +6,7 @@ import "./index.css"
 import ClassComponent from './component/ClassComponent';
 import FunctionComponent from './component/FunctionComponent';
 import Counter from './component/Counter'
+import ReviewFunction from './component/ReviewFunction';
 
 function App() {
   return (
@@ -18,10 +19,10 @@ function App() {
       <About />
       <About />
       <ClassComponent />
-      <FunctionComponent />
       <br></br>
     <div>
       <Counter />
+      <ReviewFunction />
     </div>
       <ContactMe />
     </div>
