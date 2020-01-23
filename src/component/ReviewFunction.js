@@ -29,7 +29,7 @@ function ReviewFunction() {
         </h1>
         counter functional based: {counter}
         <button onClick={increment}>+</button>
-        <button onClick={decrement}>-</button>
+        <button onClick={decrement} style={{backgroundColor: "red"}}>-</button>
         <div>{name}</div>
         <button onClick={changeName}>Ganti Nama</button>
         <div>{obj.firstName}</div>
