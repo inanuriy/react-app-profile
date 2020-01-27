@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import { withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class Login extends Component {
             <Button variant="primary" type="submit">
               Login
             </Button>
+            <p>Don't have an account? <Link as={Link} to={"/signup"}> Sign up</Link>.</p>
           </Form>
         </Container>
       </div>
