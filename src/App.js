@@ -18,6 +18,7 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 
 function App() {
+  const isLogin = JSON.parse(localStorage.getItem("status"));
   return (
     <Router>
       <NavBar />
@@ -41,17 +42,17 @@ function App() {
           <ReviewFunction />
         </Route>
         <Route path="/todolist">
-          {/* {isLogin && isLogin !== null ? ( */}
+          {isLogin && isLogin !== null ? (
             <Todolist />
-          {/* ) : (
-            <Redirect to="/signin" />
-          )} */}
-        </Route>
-        <Route path="/signup">
-          <SignUp />
+          ) : (
+            <Redirect to="/login" />
+          )}
         </Route>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/signup">
+          <SignUp />
         </Route>
       </Switch>
     </Router>

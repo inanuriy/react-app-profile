@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+ul {
+    margin: 12px 12px 10px 10px;
+    padding: 0;
+}
+
+ul li {
+    font-family: 'Open Sans', sans-serif;
+    background: #f8c471;
+    border-color: #dc7633;
+    margin: 9px;
+    padding-left: 10px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+ul li:hover {
+    background: #fad7a0;
+}
+
+.edit {
+    cursor: pointer;
+    position: absolute;
+    right: 90px;
+}
+
+.edit:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.remove {
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+}
+
+.remove:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.addList {
+    width: 75%;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 2vw;
+    border-width: 0.5vw;
+}
+
+.addButton {
+    margin-left: 10px;
+    padding: 1vw 0.8vw;
+    background: #73c6b6;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    width: 19.5%;
+    font-size: 20px;
+}
+
+.addButton:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+}

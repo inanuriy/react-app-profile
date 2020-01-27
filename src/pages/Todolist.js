@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./todolist.css";
 
 class Todolist extends Component {
   constructor(props) {
@@ -43,35 +44,47 @@ class Todolist extends Component {
     const { todos, todo } = this.state;
     return (
       <div>
-        <h1>TO-DO LIST</h1>
-        <div>
-          <form onSubmit={this.handleSubmit}>
-            <input
-              type="text"
-              id="newInput"
-              placeholder="What's up?"
-              value={todo}
-              onChange={this.handleChange}
-            />
-            <button type="submit">Add Todo</button>
-          </form>
-        </div>
-        <ul style={{width: "300px"}}>
-          {todos.map((item, index) => {
-            return (
-              <div
-                style={{ display: "flex", justifyContent: "space-between" }}
-                key={index}
-              >
-                <li>{item}</li>
-                <div>
-                  <span onClick={() => this.handleEdit(index)}>Edit</span>
-                  <span onClick={() => this.handleDelete(index)}>X</span>
+          <h1>TO-DO LIST</h1>
+          <div>
+            <form onSubmit={this.handleSubmit}>
+              <input
+                className="addList"
+                type="text"
+                id="newInput"
+                placeholder="What's up?"
+                value={todo}
+                onChange={this.handleChange}
+              />
+              <button type="submit" className="addButton">
+                Add Todo
+              </button>
+            </form>
+          </div>
+          <ul>
+            {todos.map((item, index) => {
+              return (
+                <div key={index}>
+                  <li>
+                    {item}
+                    {/* <div> */}
+                    <span
+                      onClick={() => this.handleEdit(index)}
+                      className="edit"
+                    >
+                      Edit
+                    </span>
+                    <span
+                      onClick={() => this.handleDelete(index)}
+                      className="remove"
+                    >
+                      X
+                    </span>
+                    {/* </div> */}
+                  </li>
                 </div>
-              </div>
-            );
-          })}
-        </ul>
+              );
+            })}
+          </ul>
       </div>
     );
   }

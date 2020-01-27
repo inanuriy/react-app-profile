@@ -29,7 +29,8 @@ class Login extends Component {
     const login = JSON.parse(localStorage.getItem("user"));
 
     if (login.email === user.email && login.password === user.password) {
-      this.props.history.push("/todolist");
+    localStorage.setItem("status", true);
+    this.props.history.push("/todolist");
     }
   };
 
