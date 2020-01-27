@@ -17,7 +17,6 @@ import NavBar from "./component/NavBar";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 
-
 function App() {
   return (
     <Router>
@@ -42,7 +41,11 @@ function App() {
           <ReviewFunction />
         </Route>
         <Route path="/todolist">
-          <Todolist />
+          {/* {isLogin && isLogin !== null ? ( */}
+            <Todolist />
+          {/* ) : (
+            <Redirect to="/signin" />
+          )} */}
         </Route>
         <Route path="/signup">
           <SignUp />
