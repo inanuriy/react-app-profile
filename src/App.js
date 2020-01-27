@@ -1,31 +1,57 @@
-import React from 'react';
-import Header from './component/Header';
-import About from './component/About';
-import ContactMe from './component/ContactMe';
-import "./index.css"
-import ClassComponent from './component/ClassComponent';
-import FunctionComponent from './component/FunctionComponent';
-import Counter from './component/Counter'
-import ReviewFunction from './component/ReviewFunction';
+import React from "react";
+import "./index.css";
+import ClassComponent from "./pages/ClassComponent";
+import Counter from "./pages/Counter";
+import ReviewFunction from "./pages/ReviewFunction";
+import FunctionComponent from "./pages/FunctionComponent";
+import Todolist from "./pages/Todolist";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import NavBar from "./component/NavBar";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main className="profilePicture">
-        <img src="https://www.shareicon.net/data/512x512/2016/09/15/829453_user_512x512.png" alt="Profile" className="profileImage"></img>
-      </main>
-      <h2 className="aboutMe">About Me</h2>
-      <About />
-      <About />
-      <ClassComponent />
-      <br></br>
-    <div>
-      <Counter />
-      <ReviewFunction />
-    </div>
-      <ContactMe />
-    </div>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
+        <Route path="/class">
+          <ClassComponent />
+        </Route>
+        <Route path="/function">
+          <FunctionComponent />
+        </Route>
+        <Route path="/counter">
+          <Counter />
+        </Route>
+        <Route path="/reviewfunction">
+          <ReviewFunction />
+        </Route>
+        <Route path="/todolist">
+          <Todolist />
+        </Route>
+        <Route path="/signup">
+          <SignUp />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
