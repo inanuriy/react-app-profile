@@ -4,7 +4,7 @@ function ReviewFunction() {
     const [counter, setCounter] = useState(0);
     // const [number, setNumber] = useState(999999);
     const [name, setName] = useState("Nama Kosong")
-    const [obj, setObj] = useState({
+    const [obj] = useState({
         firstName: "ina",
         lastName: "nuri",
         hobby: ["nonton", "foto"]

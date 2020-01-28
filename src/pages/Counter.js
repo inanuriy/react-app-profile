@@ -21,7 +21,7 @@ class ClassComponent extends React.Component {
     };
 
     reset = () => {
-        this.setState({nol: this.state.nol = 0
+        this.setState({nol: this.state.nol === 0
         });
     };
 

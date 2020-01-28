@@ -16,6 +16,8 @@ import Profile from "./pages/Profile";
 import NavBar from "./component/NavBar";
 import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
+import TodoHooks from "./pages/TodoHooks";
+import ExampleLifeCycle from "./pages/ExampleLifeCycle";
 
 function App() {
   const isLogin = JSON.parse(localStorage.getItem("status"));
@@ -38,8 +40,14 @@ function App() {
         <Route path="/counter">
           <Counter />
         </Route>
+        <Route path="/examplelifecycle">
+          <ExampleLifeCycle />
+        </Route>
         <Route path="/reviewfunction">
           <ReviewFunction />
+        </Route>
+        <Route path="/todolisthooks">
+          <TodoHooks />
         </Route>
         <Route path="/todolist">
           {isLogin && isLogin !== null ? (

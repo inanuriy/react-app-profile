@@ -42,8 +42,14 @@ const NavBar = props => {
             <Nav.Link as={Link} to="/reviewfunction">
               Review Function
             </Nav.Link>
+            <Nav.Link as={Link} to="/examplelifecycle">
+              Example Life Cycle
+            </Nav.Link>
             <Nav.Link as={Link} to="/todolist">
               Todo List
+            </Nav.Link>
+            <Nav.Link as={Link} to="/todolisthooks">
+              Todo List Hooks
             </Nav.Link>
           </Nav>
           <Nav className="mr-auto">

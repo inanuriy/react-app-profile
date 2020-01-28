@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./todolist.css";
 
-class Todolist extends Component {
+class Todolist extends Component { //bisa juga pakai React.Component, jika diatasnya tidak import Component dulu
   constructor(props) {
     super(props);
 
@@ -42,6 +42,7 @@ class Todolist extends Component {
 
   render() {
     const { todos, todo } = this.state;
+    
     return (
       <div>
           <h1>TO-DO LIST</h1>
