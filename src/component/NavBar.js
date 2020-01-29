@@ -45,6 +45,9 @@ const NavBar = props => {
             <Nav.Link as={Link} to="/examplelifecycle">
               Example Life Cycle
             </Nav.Link>
+            <Nav.Link as={Link} to="/getcardlist">
+              Get Card List
+            </Nav.Link>
             <Nav.Link as={Link} to="/todolist">
               Todo List
             </Nav.Link>

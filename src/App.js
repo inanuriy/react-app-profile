@@ -18,6 +18,7 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import TodoHooks from "./pages/TodoHooks";
 import ExampleLifeCycle from "./pages/ExampleLifeCycle";
+import GetCardList from "./pages/getcardlist";
 
 function App() {
   const isLogin = JSON.parse(localStorage.getItem("status"));
@@ -48,6 +49,9 @@ function App() {
         </Route>
         <Route path="/todolisthooks">
           <TodoHooks />
+          </Route>
+          <Route path="/getcardlist">
+          <GetCardList />
         </Route>
         <Route path="/todolist">
           {isLogin && isLogin !== null ? (
